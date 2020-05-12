@@ -11,8 +11,22 @@
     <p id="output1"></p>
     <button id="button1">click</button>
     <script>
+    var type = 1;
+
       document.getElementById('button1').addEventListener('click', () => {
-        document.getElementById('output1').textContent = 'hello!';
+        if (type == 1) {
+          document.getElementById('output1').textContent = 'hello!';
+          type = 2;
+        } else if (type == 2) {
+          const username = prompt('type -> (username)');
+          if (username == 'none') {
+            document.getElementById('output1').textContent = 'Error';
+          } else if (username == 'null') {
+            document.getElementById('output1').textContent = 'Error';
+          } else {
+            document.getElementById('output1').textContent = 'Hello, ' + username;
+          }
+        }
       });
     </script>
   </body>
