@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charse="utf-8">
+    <title>resaprosite0007 -- JavaScript test</title>
+  </head>
+  <body>
+    <noscript>
+      <p>JavaScript is disabled</p>
+    </noscript>
+    <p id="output1"></p>
+    <button id="button1">click</button>
+    <script>
+      document.getElementById('button1').addEventListener('click', () => {
+        document.getElementById('output1').textContent = 'hello!';
+      });
+    </script>
+  </body>
+</html>
